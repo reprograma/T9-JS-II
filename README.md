@@ -4,7 +4,7 @@
 
 
 ## Javascript II - Manipulando o DOM
-#
+
 
 ### :memo: O que vamos ver durante essa semana:
 
