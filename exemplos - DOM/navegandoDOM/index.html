@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando pelo DOM</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <h1>HTML example</h1>
+        <hr />
+        <img alt="Virtual Hugs" src="https://media.giphy.com/media/wIePCLOwUQ4RW/giphy.gif">
+        <section id="a">
+            <h2>Section A</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper rutrum erat a condimentum. Aenean
+                at ipsum ut est sodales porta quis eu nisl. Interdum et malesuada fames ac ante ipsum primis in
+                faucibus. Maecenas porta, nibh quis maximus tempus, sem lectus pretium magna, id consequat neque elit a
+                purus. Cras maximus posuere enim, a rhoncus tellus rutrum sed. Duis at tincidunt odio. Curabitur ut
+                feugiat libero. Etiam arcu dolor, scelerisque non cursus elementum, lobortis nec enim. Morbi nisi augue,
+                vulputate sit amet imperdiet vel, pretium et est. <strong>strong</strong> Vivamus mi ligula, rhoncus sit
+                amet est ut,
+                pellentesque blandit quam. Sed finibus placerat lorem, sed iaculis arcu congue quis. Ut convallis
+                suscipit felis in congue. Suspendisse eleifend, nisi ac pretium mattis, justo nibh sodales purus, vitae
+                mollis lorem quam vel neque. Quisque blandit tellus sed pellentesque interdum. Phasellus porttitor nulla
+                vitae euismod posuere.</p>
+        </section>
+        <section id="b">
+            <h2>Section B</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper <strong>strong</strong> rutrum erat
+                a condimentum. Aenean
+                at ipsum ut est sodales porta quis eu nisl. Interdum et malesuada fames ac ante ipsum primis in
+                faucibus. Maecenas porta, nibh quis maximus tempus, sem lectus pretium magna, id consequat neque elit a
+                purus. Cras maximus posuere enim, a rhoncus tellus rutrum sed. Duis at tincidunt odio. Curabitur ut
+                feugiat libero. Etiam arcu dolor, scelerisque non cursus elementum, lobortis nec enim. Morbi nisi augue,
+                vulputate sit amet imperdiet vel, pretium et est. Vivamus mi ligula, rhoncus sit amet est ut,
+                pellentesque blandit quam. Sed finibus placerat lorem, sed iaculis arcu congue quis. Ut convallis
+                suscipit felis in congue. Suspendisse eleifend, nisi ac pretium mattis, justo nibh sodales purus, vitae
+                mollis lorem quam vel neque. Quisque blandit tellus sed pellentesque interdum. Phasellus porttitor nulla
+                vitae euismod posuere.</p>
+        </section>
+        <hr />
+        <section id="c" class="flex-box">
+            <button class="purple-btns">Legal</button>
+            <button class="purple-btns coxinha">Ok</button>
+            <button class="purple-btns">Bacana</button>
+            <a href="site.com" id="link">Meu link</a>
+        </section>
+        <hr>
+        <section id="d">
+            <h2>Form</h2>
+            <form>
+                <label>Azul
+                    <input type="checkbox"  name="cor" value="azul">
+                </label>
+                <label>
+                    verde
+                <input type="checkbox"  name="cor" value="verde">
+
+                </label>
+                <label>
+                    roxo
+                    <input type="checkbox" name="cor" value="roxo">
+                </label>                
+
+                <input name="email" placeholder="E-mail" />
+                <input name="name" placeholder="Nome" />
+                <textarea name="comment" placeholder="Deixe seu comentário..."></textarea>
+                <button type="submit" class="btns">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!-- <script>
+        //Mostrar todos os métodos para selecionar elementos no DOM
+
+        // acessando pela TagName
+        // um array de elementos
+        // [elemento, elemento, ...]
+        // me retorna mais de um elemento
+        const meuarraydeh2 = document.getElementsByTagName('h2')
+        //console.log(meuarraydeh2[0])
+
+        for (let count = 0; count < meuarraydeh2.length; count++){
+            console.log(meuarraydeh2[count])
+        }
+        //console.log("por tag", document.getElementsByTagName('h2'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //mudando propriedade src de elementos img
+        const gif = document.querySelector('img')
+        // setTimeout(() => {
+        //     gif.src = "https://media.giphy.com/media/82wOb7Qg9KuUvtdN3v/giphy.gif"
+        // }, 2000)
+
+        //mudando style de elementos
+        const button = document.querySelector('.purple-btns')
+        setTimeout(() => {
+            //utilizando atributo style e acessando as props de css dentro dele.
+            //button.style.backgroundColor = 'red'
+
+            //utilizando o atributo ClassList
+            // console.log("buttons class", button.classList)
+            // button.classList.add('red-btns')
+            // console.log("new buttons class", button.classList)
+            // button.classList.remove('coxinha')
+            // console.log("new new buttons class", button.classList)
+
+            //utilizando o atributo ClassName
+            //button.className += ' red-btns'
+            
+        }, 2000)
+    </script> -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

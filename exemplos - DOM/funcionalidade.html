@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo por que usar o javascript no HTML</title>
+    <style>
+        body {
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiplica por 2</h1>
+    <input id="input" type="number" placeholder="Insira um número">
+    <button onclick="calculaValor()">calcular</button>
+    <div id="resultado"></div>
+    <script>
+        function calculaValor(){
+            const input = document.getElementById('input')
+            const resultado = document.getElementById('resultado')
+            resultado.innerHTML = input.value * 2
+        }
+        
+    </script>   
+</body>
+
+</html>
