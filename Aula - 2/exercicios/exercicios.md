@@ -40,7 +40,7 @@ para que a propriedade color de cada li seja red.
     ```
 
 4. percorra pelo array de livros e, para cada livro, crie uma div com o título e autor do livro e 
-adicione ele na página.
+adicione ela na página.
 
 Bonus: adicione uma propriedade com a URL da imagem da capa do livro e crie também um img para cada livro
 
