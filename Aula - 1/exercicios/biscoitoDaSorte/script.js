@@ -80,6 +80,6 @@ const frases = ["A vida trará coisas boas se tiveres paciência.",
   1. selecione a imagem do biscoito da sorte.
   2. selecione o parágrafo que receberá a mensagem da sorte.
   3. crie a função "fraseDaSorte", essa função deve alterar o texto do parágrafo para uma frase randômica do array acima.
-
     
 */
+

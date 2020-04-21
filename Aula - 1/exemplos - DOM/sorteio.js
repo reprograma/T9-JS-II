@@ -6,4 +6,6 @@ const cor = ["azul", "vermelho", "roxo", "rosa", "preto", "branco"]
 
 const numeroRandomico = Math.floor(Math.random() * cor.length)
 
+console.log('tamanho do array', cor.length)
+
 console.log(cor[numeroRandomico])
