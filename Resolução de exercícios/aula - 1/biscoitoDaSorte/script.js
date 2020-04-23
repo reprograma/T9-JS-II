@@ -71,23 +71,10 @@ const frases = ["A vida trará coisas boas se tiveres paciência.",
 ]
 
 
-/*
-  Exercício 2
-  -----------
+const image = document.querySelector('img')
+const result = document.querySelector('#resultado')
 
-  Biscoito da sorte
-
-  1. selecione a imagem do biscoito da sorte. ok
-  2. selecione o parágrafo que receberá a mensagem da sorte. ok
-  3. crie a função "fraseDaSorte", essa função deve alterar o texto do parágrafo para uma frase randômica do array acima.
-    
-*/
-
-const biscoito = document.querySelector('img')
-const mensagem = document.querySelector('#message')
-
-function fraseDaSorte() {
-  const numeroAleatorio = Math.floor(Math.random() * frases.length)
-  mensagem.innerText = frases[numeroAleatorio]
+function fraseDaSorte(){
+    const randomNumber = Math.floor(Math.random() * frases.length)
+    result.innerText = frases[randomNumber]
 }
-

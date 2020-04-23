@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processando formulários</title>
+</head>
+
+<body>
+    <form>
+        <label>Me diga seu nome:
+            <input name="name" />
+        </label>
+        <br>
+        <label>Qual seu idioma?
+            <select id="lang">
+                <option value="pt">Poruguês</option>
+                <option value="en">Inglês</option>
+                <option value="es">Espanhol</option>
+            </select>
+        </label>
+        <br>
+        <button type="submit">Diga oi pra mim, por favor!</button>
+    </form>
+    <script>
+        // Step 1: Find the element we want the event on
+        const form = document.querySelector('form')
+        console.log(form)
+        // Step 2: Define the event listener function
+        function greeting(e) {
+            e.preventDefault()
+            const greeting = document.createElement('div')
+            const name = document.querySelector('input').value
+            const lang = document.querySelector('#lang').value
+            let message;
+
+            if(lang == 'pt'){
+                message = "Olá, " + name + "!"
+            } if(lang == "en") {
+                message = "Hello, " + name + "!"
+            }if (lang == 'es'){
+                message = "Hola, " + name + "!"
+            }
+
+            greeting.innerText = message
+            document.body.appendChild(greeting)
+        }
+        // Step 3: Attach event listener to element
+        form.addEventListener('submit', greeting)
+    </script>
+</body>
+
+</html>

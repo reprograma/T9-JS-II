@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+
+h1{
+    color: yellow;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 100px;
+    margin: 80px;
+}
+
+#input {
+    border: none;
+    font-family: sans-serif;
+    color: black;
+    padding: 15px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    margin: 80px;
+}
+
+#resposta {
+    color: white;
+    padding: 0px;
+    display: block;
+    margin-left: auto;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Passion One', cursive; 
+}

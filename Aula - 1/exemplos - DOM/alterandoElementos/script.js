@@ -32,7 +32,7 @@ botao.innerText = "algumacoisa"
 
 // -----------------------------------------------
 // alterar o conteúdo do body 
-// document.body.innerHTML = ...
+//document.body.innerHTML = ...
 
 // ---------------------------------------------
 //altera o estilo do elemento
@@ -50,6 +50,7 @@ botao.innerText = "algumacoisa"
 //chamando classList
 // o classList é uma lista de todas as classes definidas no HTML para o elemento
 //adicionando uma classe na lista de classes do meu elemento
+
 //console.log(div.classList)
 //div.classList.add('divAlteradaPorJS')
 //console.log(div.classList)
@@ -65,8 +66,9 @@ botao.innerText = "algumacoisa"
 // usando setAtributte
 // div.setAttribute("id", "idNOvo")
 
-// botao.name = "logout"
+//botao.name = "logout"
 
-// div.setAttribute("name", "logout")
+
+// botao.setAttribute("name", "logout")
 
 // console.log(botao.name)

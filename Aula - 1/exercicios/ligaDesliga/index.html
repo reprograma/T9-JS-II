@@ -3,11 +3,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/style.css">
-    <script src="./assets/script.js"></script>
     <title>Switch</title>
+    <style>
+
+        body {
+            text-align: center;
+            padding-top: 50px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img {
+            width: 200px;
+            margin-top: 30px;
+        }
+
+        .imagem {
+            width: 400px;
+        }
+
+    </style>
 </head>
 <body>
-    <img onclick=changeBg() src="./assets/button.png" alt="Botão de desligar">
+    <h1>Ligado</h1>
+    <img onclick="changeBg()" src="./icon.png" alt="Botão de desligar">
+    <img class="imagem" src="https://media.giphy.com/media/3KVRMtLXfORVosk6TW/giphy.gif"/>
+    <script src="script.js"></script>
 </body>
 </html>
