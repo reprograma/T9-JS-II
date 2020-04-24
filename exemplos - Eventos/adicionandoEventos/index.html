@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
+    <script src="./script.js"></script>
     <style>
+        img,
+        button {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+
         div#box {
             background-color: hotpink;
             width: 400px;
@@ -12,19 +27,21 @@
             color: white;
             text-align: center;
             font-weight: bold;
-           line-height: 200px;
+            line-height: 200px;
         }
     </style>
 </head>
+
 <body>
     <div id="box">
         Essa div está entediada!
     </div>
 
-    <button id="inline" onclick="teste()">Click inline</button>
-    <button id="button">Click</button>
+    <!-- <button id="inline" onclick="teste()">Click inline</button> -->
+    <button id="button">Faça aparecer um gif, clique em mim!</button>
 
-    <script src="./script.js"></script>
+    
 
 </body>
+
 </html>
