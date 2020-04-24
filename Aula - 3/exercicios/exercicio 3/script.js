@@ -12,3 +12,19 @@
 
 */
 
+window.addEventListener('DOMContentLoaded', function () {
+
+  const gatinhos = document.querySelectorAll('.item__imagem')
+
+  for (let i = 0; i < gatinhos.length; i++) {
+    const estilo = () => {
+      gatinhos[i].style.display = 'none'
+    }
+    gatinhos[i].addEventListener('click', estilo)
+  }
+
+  console.log(gatinhos)
+  
+})
+
+
